@@ -1,0 +1,9 @@
+{
+  "mode": "ytdlp",
+  "channels": [],
+  "database": "superchats.sqlite3",
+  "chat_database": "chat-messages.sqlite3",
+  "discovery_interval_seconds": 3600,
+  "public_check_interval_seconds": 60,
+  "video_check_interval_seconds": 30
+}

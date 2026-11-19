@@ -1,0 +1,8 @@
+This package includes a protocol definition from Google's Streaming Live Chat guide:
+https://developers.google.com/youtube/data/live/streaming-live-chat
+
+The source page licenses its code samples under the Apache License, Version 2.0:
+https://www.apache.org/licenses/LICENSE-2.0
+
+Modification: added import "google/protobuf/duration.proto" to resolve the Duration type.
+stream_list_pb2.py and stream_list_pb2_grpc.py were generated from that definition.

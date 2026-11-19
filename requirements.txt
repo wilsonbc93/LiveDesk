@@ -1,0 +1,4 @@
+requests>=2.32,<3
+grpcio>=1.85.3,<2
+protobuf>=7.35.1,<8
+yt-dlp>=2026.10.26
