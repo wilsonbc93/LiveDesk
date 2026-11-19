@@ -44,6 +44,14 @@ Donation totals include Super Chats and Super Stickers. Bare `$` amounts are tre
 
 Historical Data contains records captured by LiveDesk. It does not automatically download chat from streams that ended before monitoring began.
 
+## User Search
+
+Use **User Search** to find a viewer across all captured live and historical streams. Search their username or full YouTube channel ID, then select an account to see its saved names, first/last activity, chat and Super Chat counts, streamers visited, and captured USD donations.
+
+Filter the activity feed by streamer, stream, date, message text, or message type. Click a streamer summary to filter its messages. Clicking a sender in the Live Dashboard or Historical Data opens that account directly.
+
+Accounts are grouped by YouTube channel ID, so name changes do not split an identified account and identical names do not combine different accounts. Records without an ID are kept as separate **unverified name-only matches**; records sharing a name cannot be confirmed as one person. This page covers captured activity only, including retained records from removed streamers.
+
 ## Settings
 
 | Setting | What it does |

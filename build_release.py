@@ -6,7 +6,7 @@ from pathlib import Path
 import zipfile
 from updater import APP_ID,allowed_file
 
-PUBLIC_FILES=('.gitignore', 'Collector Status.cmd', 'NOTICE.txt', 'Open Dashboard.cmd', 'README.md', 'Setup LiveDesk.cmd', 'Start Collector.cmd', 'Start LiveDesk.cmd', 'Stop Collector.cmd', 'Stop Dashboard.cmd', 'Stop LiveDesk.cmd', 'Update LiveDesk.cmd', 'VERSION', 'app.py', 'bootstrap.py', 'collector.py', 'config.example.json', 'config.json', 'control.py', 'dashboard.html', 'dashboard.py', 'diagnostics.py', 'help.html', 'history.html', 'preferences.py', 'requirements.txt', 'settings.html', 'settings_api.py', 'startup.py', 'stream_list.proto', 'stream_list_pb2.py', 'stream_list_pb2_grpc.py', 'update_helper.py', 'updater.py')
+PUBLIC_FILES=('.gitignore', 'Collector Status.cmd', 'NOTICE.txt', 'Open Dashboard.cmd', 'README.md', 'Setup LiveDesk.cmd', 'Start Collector.cmd', 'Start LiveDesk.cmd', 'Stop Collector.cmd', 'Stop Dashboard.cmd', 'Stop LiveDesk.cmd', 'Update LiveDesk.cmd', 'VERSION', 'app.py', 'bootstrap.py', 'collector.py', 'config.example.json', 'config.json', 'control.py', 'dashboard.html', 'dashboard.py', 'diagnostics.py', 'help.html', 'history.html', 'preferences.py', 'requirements.txt', 'settings.html', 'settings_api.py', 'startup.py', 'stream_list.proto', 'stream_list_pb2.py', 'stream_list_pb2_grpc.py', 'update_helper.py', 'updater.py', 'user_search.py', 'users.html')
 
 
 def build(root,destination):

@@ -301,7 +301,11 @@ class Handler(BaseHTTPRequestHandler):
         parsed = urlparse(self.path)
         try:
             query=parse_qs(parsed.query)
-            if parsed.path=='/api/settings':
+            if parsed.path in ('/api/users','/api/user','/api/user/messages'):
+                from user_search import users,profile,messages
+                action={'/api/users':users,'/api/user':profile,'/api/user/messages':messages}[parsed.path]
+                self.send_json(action(ROOT,query)); return
+            elif parsed.path=='/api/settings':
                 from settings_api import settings_data
                 self.send_json({**settings_data(ROOT),'token':SETTINGS_TOKEN}); return
             elif parsed.path=='/api/diagnostics':
@@ -336,6 +340,8 @@ class Handler(BaseHTTPRequestHandler):
             elif parsed.path in ('/history','/history.html'):
                 body=(ROOT/'history.html').read_bytes()
                 content_type='text/html; charset=utf-8'
+            elif parsed.path in ('/users','/users.html'):
+                body=(ROOT/'users.html').read_bytes(); content_type='text/html; charset=utf-8'
             elif parsed.path in ('/settings','/settings.html'):
                 body=(ROOT/'settings.html').read_bytes()
                 content_type='text/html; charset=utf-8'

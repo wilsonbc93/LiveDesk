@@ -29,6 +29,7 @@ Before publishing a release, check setup, start, stop, and update in a fresh Win
 - `collector.py` and `control.py`: chat collection and background supervision.
 - `dashboard.py`, the HTML pages, and `settings_api.py`: local dashboard and settings API.
 - `preferences.py`: persisted preferences and retention.
+- `user_search.py` and `users.html`: cross-stream account search and captured activity.
 - `bootstrap.py`, `app.py`, and `updater.py`: installation, lifecycle, and updates.
 - `diagnostics.py` and `startup.py`: diagnostic reports and optional login startup.
 
